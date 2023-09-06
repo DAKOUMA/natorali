@@ -1,0 +1,29 @@
+$text-color: #e5ece9;
+$yellow-color: #ffc800;
+$green-color: #0d5c63;
+
+$gradient-green: linear-gradient(180deg, #0D5C63 0%, #144C4E 100%);
+
+.gradient__bg {
+    background: -moz-radial-gradient(circle at 0% 0%, #584E45 0%, #16130A 100%);
+
+    background: -webkit-radial-gradient(circle at 0% 0%, #584E45 0%, #16130A 100%);
+
+    background: -o-radial-gradient(circle at 0% 0%, #584E45 0%, #16130A 100%);
+
+    background: -ms-radial-gradient(circle at 0% 0%, #584E45 0%, #16130A 100%);
+
+    background: radial-gradient(circle at 0% 0%, #584E45 0%, #16130A 100%);
+}
+
+
+@import './component/caroussel/caroussel';
+@import './component/circle/circle';
+@import './component/id/id';
+@import './component/navbar/navbar';
+@import './container/activity/activity';
+@import './container/contact/contact';
+@import './container/header/header';
+@import './container/homepage/homepage';
+@import './container/product/product';
+@import './container/team/team';

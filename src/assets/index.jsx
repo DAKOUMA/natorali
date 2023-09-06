@@ -1,0 +1,14 @@
+export { default as chicken } from './chicken.png';
+export { default as factory } from './factory.png';
+export { default as fenugrec } from './fenugrec.jpeg';
+export { default as foraha } from './foraha.jpg';
+export { default as home } from './home.jpeg';
+export { default as plant } from './plant.png';
+export { default as ricin } from './ricin.jpeg';
+export { default as sesame } from './sesame.jpeg';
+export { default as carousselBottle } from './caroussel-bottle.jpg';
+export { default as carousselChicken } from './caroussel-chicken.jpg';
+export { default as carousselSeed } from './caroussel-seed.jpg';
+export { default as gmail } from './gmail.png';
+export { default as facebook } from './facebook.png';
+export { default as anselme } from './anselme.jpeg'
