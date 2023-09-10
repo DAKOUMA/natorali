@@ -1,0 +1,66 @@
+.Contact {
+    background: $gradient-green;
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+    > h1 {
+        font-size: 40px;
+        font-weight: 600;
+        color: $yellow-color;
+        text-align: center;
+    }
+}
+
+.Contact__text {
+    width: 30%;
+    color: $text-color;
+    &-title {
+        width: fit-content;
+        margin: 1rem auto 1rem auto;
+        text-align: right;
+        > h1 {
+            letter-spacing: 5px;
+            font-weight: 700;
+            font-size: 2.5rem;
+            
+        }
+
+        > span {
+            letter-spacing: 2px;
+            font-size: 1rem;
+            text-align: right;
+        }
+    }
+
+    > p {
+        letter-spacing: 2px;
+    }
+
+    &-social {
+        margin: 30px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Contact__text {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Contact__text {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .Contact__text {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .Contact__text {
+        width: 70%;
+    }
+}

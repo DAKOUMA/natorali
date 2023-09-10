@@ -1,0 +1,199 @@
+.Circle {
+    display: flex;
+    margin: 0 auto 0 auto;
+    
+    &:hover, &:active {
+        .Circle__text {
+            height: 155px;
+            overflow: auto;
+        }
+
+        > .img {
+            border: solid $yellow-color 7px;
+            animation: none;
+        }
+    }
+
+    > .img {
+        width: 120px;
+        height: 120px;
+        border: solid $green-color 7px;
+        background-size: cover;
+        background-position: center;
+
+        position: relative;
+        z-index: 2;
+
+        transition: 1s;
+
+        cursor: pointer;
+    }
+}
+
+.Circle__text {
+    width: 110px;
+    height: 0px;
+    padding: 0 3px 0 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 60px;
+    translate: -50%;
+    margin-top: 60px;
+    
+
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: $text-color;
+    background: linear-gradient(180deg, #599499 0%, rgba(89, 148, 153, 0.00) 100%);
+
+    overflow: hidden;
+    transition: 1s;
+
+    > h1 {
+        font-family: 'caveat';
+        font-size: 16px;
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
+
+    > ul {
+        > li {
+            font-family: "caveat";
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .Circle {
+
+        &:hover, &:active {
+            .Circle__text {
+                height: 130px;
+                overflow: auto;
+            }
+
+            > .img {
+                border: solid $yellow-color 7px;
+            }
+        }
+        
+        > .img {
+            width: 100px;
+            height: 100px;
+            border: solid $green-color 7px;
+        }
+    }
+
+    .Circle__text {
+        width: 90px;
+        height: 0px;
+        margin-top: 50px;
+        margin-left: 50px;
+        translate: -50%;
+
+        overflow: hidden;
+
+        > h1 {
+            font-size: 12px;
+        }
+
+        > ul {
+            > li {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Circle {
+
+        &:hover, &:active {
+            .Circle__text {
+                height: 105px;
+                overflow: auto;
+            }
+
+            > .img {
+                border: solid $yellow-color 4px;
+            }
+        }
+
+        > .img {
+            width: 80px;
+            height: 80px;
+            border: solid $green-color 4px;
+        }
+    }
+
+    .Circle__text {
+        width: 70px;
+        height: 0px;
+        margin-top: 40px;
+        margin-left: 40px;
+        translate: -50%;
+
+        padding: 0 2px 0 2px;
+
+        overflow: hidden;
+
+        > h1 {
+            font-size: 10px;
+        }
+
+        > ul {
+            > li {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Circle {
+        &:hover {
+            .Circle__text {
+                height: 85px;
+                overflow: auto;
+            }
+
+            > .img {
+                border: solid $yellow-color 4px;
+            }
+        }
+        > .img {
+            width: 60px;
+            height: 60px;
+            border: solid $green-color 4px;
+        }
+    }
+
+    .Circle__text {
+        width: 55px;
+        height: 85px;
+        margin-top: 30px;
+        margin-left: 30px;
+        translate: -50%;
+
+        padding: 0 2px 0 2px;
+
+        overflow: hidden;
+
+        > h1 {
+            font-size: 8px;
+        }
+
+        > ul {
+            > li {
+                font-size: 8px;
+            }
+        }
+    }
+}
+
+
+
+  

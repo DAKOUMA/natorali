@@ -1,8 +1,31 @@
+
 $text-color: #e5ece9;
 $yellow-color: #ffc800;
 $green-color: #0d5c63;
 
 $gradient-green: linear-gradient(180deg, #0D5C63 0%, #144C4E 100%);
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('./assets/font/Dosis/Dosis-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('./assets/font/Caveat/Caveat-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Dosis";
+    font-size: 15px;
+}
+
+.margin-section {
+    margin-bottom: 50px;
+    padding-top: 75px ;
+}
 
 .gradient__bg {
     background: -moz-radial-gradient(circle at 0% 0%, #584E45 0%, #16130A 100%);
@@ -27,3 +50,16 @@ $gradient-green: linear-gradient(180deg, #0D5C63 0%, #144C4E 100%);
 @import './container/homepage/homepage';
 @import './container/product/product';
 @import './container/team/team';
+
+footer {
+    color: $text-color;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,15 @@
+.Activity {
+    > h1 {
+        font-size: 40px;
+        font-weight: 600;
+        color: $yellow-color;
+        text-align: center;
+    }
+
+    > p {
+        font-size: 17px;
+        color: $text-color;
+        text-align: center;
+        margin: 30px 0px 30px 0px;
+    }
+}

@@ -1,0 +1,189 @@
+.Product {
+    margin-top: 50px;
+    > h1 {
+        font-size: 40px;
+        font-weight: 600;
+        color: $yellow-color;
+        text-align: center;
+    }
+
+    > p {
+        font-size: 17px;
+        color: $text-color;
+        text-align: center;
+        margin: 30px 0px 30px 0px;
+    }
+}
+
+.Product__container {
+    width: 75%;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    & div:nth-child(0n+1) {
+        grid-column: 3/4;
+        grid-row: 1;
+
+        > .img {
+            -webkit-animation: shake-vertical 5s cubic-bezier(0.455, 0.030, 0.515, 0.955)  infinite both;
+	                animation: shake-vertical 5s cubic-bezier(0.455, 0.030, 0.515, 0.955)  infinite both;
+                    &:hover, :active {
+                        animation: none;
+                    }
+        }
+    }
+
+    & div:nth-child(0n+2) {
+        grid-column: 1/2;
+        grid-row: 2;
+
+        > .img {
+            -webkit-animation: shake-vertical 4s cubic-bezier(0.455, 0.030, 0.515, 0.955)  infinite both;
+	                animation: shake-vertical 4s cubic-bezier(0.455, 0.030, 0.515, 0.955)  infinite both;
+                    &:hover, :active {
+                        animation: none;
+                    }
+        }
+    }
+
+    & div:nth-child(0n+3) {
+        grid-column: 5/6;
+        grid-row: 2;
+
+        > .img {
+            -webkit-animation: shake-vertical 8s cubic-bezier(0.455, 0.030, 0.515, 0.955)  infinite both;
+	                animation: shake-vertical 8s cubic-bezier(0.455, 0.030, 0.515, 0.955)  infinite both;
+                    &:hover, :active {
+                        animation: none;
+                    }
+        }
+    }
+
+    & div:nth-child(0n+4) {
+        grid-column: 2/3;
+        grid-row: 3;
+
+        > .img {
+            -webkit-animation: shake-vertical 7s cubic-bezier(0.455, 0.030, 0.515, 0.955)  infinite both;
+	                animation: shake-vertical 7s cubic-bezier(0.455, 0.030, 0.515, 0.955)  infinite both;
+                    &:hover, :active {
+                        animation: none;
+                    }
+        }
+    }
+
+    & div:nth-child(0n+5) {
+        grid-column: 4/5;
+        grid-row: 3;
+
+        > .img {
+            -webkit-animation: shake-vertical 6s cubic-bezier(0.455, 0.030, 0.515, 0.955)  infinite both;
+	                animation: shake-vertical 6s cubic-bezier(0.455, 0.030, 0.515, 0.955)  infinite both;
+                    &:hover, :active {
+                        animation: none;
+                    }
+        }
+    }
+}
+
+@-webkit-keyframes shake-vertical {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+    }
+    80% {
+      -webkit-transform: translateY(6.4px);
+              transform: translateY(6.4px);
+    }
+    90% {
+      -webkit-transform: translateY(-6.4px);
+              transform: translateY(-6.4px);
+    }
+  }
+  @keyframes shake-vertical {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+    }
+    80% {
+      -webkit-transform: translateY(6.4px);
+              transform: translateY(6.4px);
+    }
+    90% {
+      -webkit-transform: translateY(-6.4px);
+              transform: translateY(-6.4px);
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    
+    .Product__container {
+        & div:nth-child(0n+1) {
+            > .img {
+                -webkit-animation: none;
+                        animation: none;
+
+            }
+        }
+        & div:nth-child(0n+2) {
+            > .img {
+                -webkit-animation: none;
+                        animation: none;
+
+            }
+        }
+        & div:nth-child(0n+3) {
+            > .img {
+                -webkit-animation: none;
+                        animation: none;
+
+            }
+        }
+        & div:nth-child(0n+4) {
+            > .img {
+                -webkit-animation: none;
+                        animation: none;
+
+            }
+        }
+        & div:nth-child(0n+5) {
+            > .img {
+                -webkit-animation: none;
+                        animation: none;
+
+            }
+        }
+
+  }
+
+}

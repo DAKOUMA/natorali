@@ -1,0 +1,89 @@
+.slick-slide.slick-center {
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 300ms;
+}
+
+.slick-slide {
+    transform: scale(0.8);
+    opacity: 0.5;
+    transition: transform 300ms;
+}
+
+.Caroussel__item {
+    text-align: center;
+    margin: auto;
+    color: $text-color;
+    background: $gradient-green;
+
+    > h1 {
+        font-size: 35px;
+        letter-spacing: 10px;
+        font-weight: 500;
+    }
+
+    > div {
+        height: 200px;
+        background-position: center;
+    }
+
+    > p {
+        font-size: 17px;
+        margin: 10px 20px 10px 20px;
+    }
+}
+
+.Caroussel {
+    width: 70%;
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+    .Caroussel {
+        width: 80%;
+
+        &__item {
+            width: auto;
+        }
+    }
+
+    .Caroussel__item {
+        > h1 {
+            font-size: 25px;
+            letter-spacing: 5px;
+            font-weight: 500;
+        }
+    
+        > div {
+            height: 150px;
+            background-position: center;
+        }
+    
+        > p {
+            font-size: 15px;
+            margin: 10px 20px 10px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .Caroussel__item {
+        > h1 {
+            font-size: 20px;
+            letter-spacing: 5px;
+            font-weight: 500;
+        }
+    
+        > div {
+            height: 150px;
+            background-position: center;
+        }
+    
+        > p {
+            font-size: 13px;
+            margin: 10px 20px 10px 20px;
+        }
+    }
+}

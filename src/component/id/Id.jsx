@@ -2,8 +2,12 @@ import React from 'react'
 
 function Id() {
   return (
-    <div>
-        Id
+    <div className='Id'>
+        <div className='Id__image'>
+
+        </div>
+        <h1></h1>
+        <p></p>
     </div>
   )
 }
